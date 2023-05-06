@@ -1,0 +1,65 @@
+{{ define "footer" }}
+<div class="text-bg-warning">
+    <div class="container">
+		<footer class="py-5" style="padding-bottom: 0!important;">
+			<div class="row">
+			  <div class="col-2">
+				<h5>Главная</h5>
+				<ul class="nav flex-column">
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Рассылка по почте</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Соц. сети</a></li>
+				</ul>
+			  </div>
+
+			  <div class="col-2">
+				<h5>Услуги</h5>
+				<ul class="nav flex-column">
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Автомобили</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Тарифы</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Города</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Скидки</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Промокоды</a></li>
+				</ul>
+			  </div>
+		
+			  <div class="col-2">
+				<h5>Правила</h5>
+				<ul class="nav flex-column">
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Возраст</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Стаж</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ДТП</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Гражданство</a></li>
+				  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ответственность</a></li>
+				</ul>
+			  </div>
+		
+			  <div class="col-4 offset-1">
+				<form method="post" action="/subscribe">
+				  <h5>Subscribe to our newsletter</h5>
+				  <p>Monthly digest of whats new and exciting from us.</p>
+				  <div class="d-flex w-100 gap-2">
+					<label for="newsletter1" class="visually-hidden">Email address</label>
+					<input id="newsletter1" type="email" name="mail" class="form-control" placeholder="Email address" autocomplete="off">
+					<button class="btn btn-primary" type="submit">Subscribe</button>
+				  </div>
+				</form>
+				<h5 style="margin-top: 15px;">Адрес главного офиса</h5>
+				<p>{{ .Config.MainOffice }}</p>
+			  </div>
+			</div>
+		
+			<div class="d-flex justify-content-between py-4 my-4 border-top" style="padding-bottom: 0!important; margin-bottom: 0!important;">
+			  <p id="footer">© {{ .Config.Year }} {{ .Config.CompanyName }}.</p>
+			  <ul class="list-unstyled d-flex">
+				<li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-twitter"></i></svg></a></li>
+				<li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-instagram"></i></svg></a></li>
+				<li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><i class="fa-brands fa-facebook"></i></svg></a></li>
+			  </ul>
+			</div>
+		  </footer>
+		  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+	</div>
+</div>
+</html>
+
+{{ end }}

@@ -1,0 +1,27 @@
+.bold {
+    font-weight: 700;
+}
+
+.right {
+    float: right;
+}
+
+.fit-4 {
+    object-fit: contain;
+    height: 400px;
+}
+
+.fit-3 {
+    object-fit: cover;
+    height: 300px;
+}
+
+.container-2 {
+    margin: 100px auto;
+}
+
+.border {
+    border: 1px solid #777;
+    margin: 100px auto 0 auto;
+    padding: 20px 0 10px 0;
+}
